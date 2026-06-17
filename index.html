@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Faisal Fawaz Al-Zahrani — UX/UI Designer</title>
+        <link href="https://fonts.googleapis.com" rel="preconnect" />
+        <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap"
+                rel="stylesheet" />
+
+        <link rel="stylesheet" href="CSS/styles.css">
+</head>
+
+<body>
+        <!-- ── NAV ──────────────────────────────────────────────── -->
+        <nav class="nav">
+                <div class="nav__inner">
+                        <a class="nav__logo" href="#">Faisal Fawaz Al-Zahrani</a>
+                        <ul class="nav__links">
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#projects">Projects</a></li>
+                                <li><a href="#skills">Skills</a></li>
+                                <li><a href="#education">Education</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                        </ul>
+                        <div class="nav__cta">
+                                <button type="button" class="btn btn--outline nav__contact-btn"
+                                        onclick="openModal('contact')">Contact</button>
+                                <a class="btn btn--primary" href="CV.pdf" download style="padding:9px 18px;font-size:13px;">Download
+                                        CV</a>
+                        </div>
+                        <div aria-label="Menu" class="nav__hamburger" onclick="toggleMenu(this)">
+                                <span></span><span></span><span></span>
+                        </div>
+                </div>
+        </nav>
+        <!-- ── HERO ─────────────────────────────────────────────── -->
+        <section class="hero">
+                <div class="container">
+                        <div class="hero__tag">
+                                <span class="hero__tag-dot"></span>
+                                Open to internships &amp; junior roles
+                        </div>
+                        <h1 class="hero__heading">
+                                Designing experiences<br />that <em>reduce friction</em><br />and earn trust.
+                        </h1>
+                        <p class="hero__sub">
+                                UX/UI Designer and HCI student with a focus on user research, information architecture,
+                                and usability — turning
+                                complex flows into clear, intuitive interfaces.
+                        </p>
+                        <div class="hero__actions">
+                                <a class="btn btn--primary" href="#projects">
+                                        View Projects
+                                        <svg fill="none" height="16" viewbox="0 0 16 16" width="16">
+                                                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor"
+                                                        stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="1.6"></path>
+                                        </svg>
+                                </a>
+                                <a class="btn btn--outline" href="CV.pdf" download>
+                                        Download CV
+                                        <svg fill="none" height="15" viewbox="0 0 15 15" width="15">
+                                                <path d="M7.5 2v8M4 7l3.5 3.5L11 7M3 12.5h9" stroke="currentColor"
+                                                        stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="1.5"></path>
+                                        </svg>
+                                </a>
+                                <a class="hero__contact-link" href="#contact">Contact me</a>
+                        </div>
+                </div>
+        </section>
+        <!-- ── ABOUT ─────────────────────────────────────────────── -->
+        <section class="section section--gray" id="about">
+                <div class="container">
+                        <div class="about__grid">
+                                <div>
+                                        <span class="eyebrow">About Me</span>
+                                        <h2 class="section-title">I design with research,<br />not assumptions.</h2>
+                                        <div class="about__body">
+                                                <p>I'm Faisal Fawaz Al-Zahrani, a UX/UI Design and HCI student who works
+                                                        from problem discovery to tested
+                                                        prototype. My process starts with understanding users — their
+                                                        mental models, friction points, and decision
+                                                        flows — before a single pixel is placed.</p>
+                                                <p>My work spans mobile UX, flow redesigns, and data visualization
+                                                        systems, all grounded in structured
+                                                        research and usability principles. I approach every project as a
+                                                        design challenge with a measurable human
+                                                        outcome.</p>
+                                        </div>
+                                        <a class="btn btn--ghost" href="#projects">
+                                                See my work
+                                                <svg fill="none" height="16" viewbox="0 0 16 16" width="16">
+                                                        <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor"
+                                                                stroke-linecap="round" stroke-linejoin="round"
+                                                                stroke-width="1.6"></path>
+                                                </svg>
+                                        </a>
+                                </div>
+                                <div class="about__highlights">
+                                        <div class="about__highlight">
+                                                <div class="about__highlight-icon">🔍</div>
+                                                <div>
+                                                        <div class="about__highlight-label">UX Research</div>
+                                                        <div class="about__highlight-desc">Heuristic evaluations,
+                                                                cognitive walkthroughs, usability testing,
+                                                                surveys, and journey mapping to understand real user
+                                                                behavior.</div>
+                                                </div>
+                                        </div>
+                                        <div class="about__highlight">
+                                                <div class="about__highlight-icon">🎨</div>
+                                                <div>
+                                                        <div class="about__highlight-label">UI Design</div>
+                                                        <div class="about__highlight-desc">Interface design with clear
+                                                                visual hierarchy, consistent components,
+                                                                and interaction patterns rooted in HCI principles.</div>
+                                                </div>
+                                        </div>
+                                        <div class="about__highlight">
+                                                <div class="about__highlight-icon">📐</div>
+                                                <div>
+                                                        <div class="about__highlight-label">Prototyping &amp; IA</div>
+                                                        <div class="about__highlight-desc">Low-to-high fidelity
+                                                                prototypes and information architecture designed
+                                                                to reduce cognitive load and guide users efficiently.
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <div class="about__highlight">
+                                                <div class="about__highlight-icon">📊</div>
+                                                <div>
+                                                        <div class="about__highlight-label">Data Visualization</div>
+                                                        <div class="about__highlight-desc">Dashboard design tailored for
+                                                                executive, operational, and analytical
+                                                                users — each view matched to a different decision need.
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </section>
+        <!-- ── PROJECTS ───────────────────────────────────────────── -->
+        <section class="section" id="projects">
+                <div class="container">
+                        <span class="eyebrow">Featured Work</span>
+                        <h2 class="section-title">Selected Projects</h2>
+                        <p class="section-subtitle">Three projects spanning UX research, flow redesign, and
+                                multi-persona dashboard
+                                design.</p>
+                        <div class="projects__grid">
+                                <!-- PROJECT 1: ToYou (featured) -->
+                                <div class="project-card project-card--featured">
+                                        <div class="project-card__image project-card__image--toyou"
+                                                style="background:#f8f8f8;aspect-ratio:auto;min-height:300px;padding:0;align-items:stretch;">
+                                                <img alt="ToYou app wireframes — homepage, search results, item page, restaurant page, cart, and payment screens"
+                                                        src="Images/toyou-wireframes.png"
+                                                        style="width:100%;height:100%;object-fit:cover;object-position:top;border-radius:0;" />
+                                        </div>
+                                        <div class="project-card__body">
+                                                <div class="project-card__cat">UX Case Study  ·  Graduation Project
+                                                </div>
+                                                <h3 class="project-card__title">ToYou Food Delivery — UX Redesign</h3>
+                                                <p class="project-card__summary">Exploring how to improve the
+                                                        food-ordering experience in ToYou by reducing
+                                                        cognitive load, improving browsing clarity, and making the
+                                                        journey more guided for exploratory users.</p>
+                                                <div class="project-card__meta">
+                                                        <span class="tag tag--status">In Progress</span>
+                                                        <span class="tag">Feb 2026 – Present</span>
+                                                        <span class="tag">Figma</span>
+                                                        <span class="tag">Usability Testing</span>
+                                                        <span class="tag">Journey Mapping</span>
+                                                        <span class="tag">Surveys</span>
+                                                </div>
+                                                <div class="project-card__outcome">
+                                                        Key outcome: Research-driven redesign for exploratory users —
+                                                        stronger IA, reduced decision friction,
+                                                        improved browsing clarity.
+                                                </div>
+                                                <div class="project-card__footer">
+                                                        <span class="project-card__role">UX Researcher / Designer</span>
+                                                        <button class="btn btn--ghost project-card-link" onclick="openModal('toyou')">
+                                                                View Case Study
+                                                                <svg fill="none" height="16" viewbox="0 0 16 16"
+                                                                        width="16">
+                                                                        <path d="M3 8h10M9 4l4 4-4 4"
+                                                                                stroke="currentColor"
+                                                                                stroke-linecap="round"
+                                                                                stroke-linejoin="round"
+                                                                                stroke-width="1.6"></path>
+                                                                </svg>
+                                                        </button>
+                                                </div>
+                                        </div>
+                                </div>
+                                <!-- PROJECT 2: Bank Al Bilad -->
+                                <div class="project-card">
+                                        <div class="project-card__image project-card__image--bank"
+                                                style="padding:0;background:#111;">
+                                                <img alt="Bank Al Bilad — before and after: 7 screens reduced to 5"
+                                                        src="Images/bank-before-after.png"
+                                                        style="width:100%;height:100%;object-fit:cover;object-position:top;" />
+                                        </div>
+                                        <div class="project-card__body">
+                                                <div class="project-card__cat">Banking UX Redesign</div>
+                                                <h3 class="project-card__title">Bank Al Bilad — Beneficiary Flow</h3>
+                                                <p class="project-card__summary">Redesigning the beneficiary addition
+                                                        flow by removing unnecessary steps and
+                                                        fields to reduce friction in a high-stakes transactional
+                                                        experience.</p>
+                                                <div class="project-card__meta">
+                                                        <span class="tag tag--status"
+                                                                style="background:rgba(16,185,129,0.1);color:#065f46;">Completed</span>
+                                                        <span class="tag">Nov – Dec 2025</span>
+                                                        <span class="tag">Figma</span>
+                                                        <span class="tag">Flow Redesign</span>
+                                                        <span class="tag">HCI Principles</span>
+                                                </div>
+                                                <div class="project-card__outcome">
+                                                        Key outcome: 7 screens → 5 screens (−28%). Unnecessary fields
+                                                        removed. Faster, clearer flow.
+                                                </div>
+                                                <div class="project-card__footer">
+                                                        <span class="project-card__role">UX Designer</span>
+                                                        <button class="btn btn--ghost project-card-link" onclick="openModal('bank')">
+                                                                View Case Study
+                                                                <svg fill="none" height="16" viewbox="0 0 16 16"
+                                                                        width="16">
+                                                                        <path d="M3 8h10M9 4l4 4-4 4"
+                                                                                stroke="currentColor"
+                                                                                stroke-linecap="round"
+                                                                                stroke-linejoin="round"
+                                                                                stroke-width="1.6"></path>
+                                                                </svg>
+                                                        </button>
+                                                </div>
+                                        </div>
+                                </div>
+                                <!-- PROJECT 3: Dashboard -->
+                                <div class="project-card">
+                                        <div class="project-card__image project-card__image--dash"
+                                                style="padding:0;background:#1a0533;">
+                                                <img alt="CEO Dashboard — Power BI" src="Images/dashboard-ceo.png"
+                                                        style="width:100%;height:100%;object-fit:cover;object-position:top;" />
+                                        </div>
+                                        <div class="project-card__body">
+                                                <div class="project-card__cat">Data Visualization / Power BI</div>
+                                                <h3 class="project-card__title">Multi-Persona Dashboard System</h3>
+                                                <p class="project-card__summary">A persona-based dashboard system
+                                                        designed in Power BI for executive,
+                                                        operational, and analytical users — each view tailored to a
+                                                        different decision context.</p>
+                                                <div class="project-card__meta">
+                                                        <span class="tag tag--status"
+                                                                style="background:rgba(16,185,129,0.1);color:#065f46;">Completed</span>
+                                                        <span class="tag">Nov – Dec 2025</span>
+                                                        <span class="tag">Power BI</span>
+                                                        <span class="tag">Data Visualization</span>
+                                                        <span class="tag">Information Design</span>
+                                                </div>
+                                                <div class="project-card__outcome">
+                                                        Key outcome: Three distinct dashboards, one per persona.
+                                                        Strategic, operational, and analytical decision
+                                                        support.
+                                                </div>
+                                                <div class="project-card__footer">
+                                                        <span class="project-card__role">UX / Information
+                                                                Designer</span>
+                                                        <button class="btn btn--ghost project-card-link" onclick="openModal('dashboard')">
+                                                                View Case Study
+                                                                <svg fill="none" height="16" viewbox="0 0 16 16"
+                                                                        width="16">
+                                                                        <path d="M3 8h10M9 4l4 4-4 4"
+                                                                                stroke="currentColor"
+                                                                                stroke-linecap="round"
+                                                                                stroke-linejoin="round"
+                                                                                stroke-width="1.6"></path>
+                                                                </svg>
+                                                        </button>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </section>
+        <!-- ── SKILLS ────────────────────────────────────────────── -->
+        <section class="section" id="skills">
+                <div class="container">
+                        <span class="eyebrow">Capabilities</span>
+                        <h2 class="section-title">Skills &amp; Tools</h2>
+                        <p class="section-subtitle">Focused on UX research, interface design, and data visualization —
+                                the full range from
+                                research to delivery.</p>
+                        <div class="skills__groups">
+                                <div class="skills__group">
+                                        <div class="skills__group-title">UX Research</div>
+                                        <div class="skills__chips">
+                                                <span class="skills__chip">Usability Testing</span>
+                                                <span class="skills__chip">Heuristic Evaluation</span>
+                                                <span class="skills__chip">Cognitive Walkthrough</span>
+                                                <span class="skills__chip">Surveys</span>
+                                                <span class="skills__chip">Journey Mapping</span>
+                                                <span class="skills__chip">Persona Development</span>
+                                        </div>
+                                </div>
+                                <div class="skills__group">
+                                        <div class="skills__group-title">UX / UI Design</div>
+                                        <div class="skills__chips">
+                                                <span class="skills__chip">Information Architecture</span>
+                                                <span class="skills__chip">Wireframing</span>
+                                                <span class="skills__chip">Prototyping</span>
+                                                <span class="skills__chip">UI Design</span>
+                                                <span class="skills__chip">Interaction Design</span>
+                                                <span class="skills__chip">Storyboarding</span>
+                                        </div>
+                                </div>
+                                <div class="skills__group">
+                                        <div class="skills__group-title">Tools &amp; Platforms</div>
+                                        <div class="skills__chips">
+                                                <span class="skills__chip">Figma</span>
+                                                <span class="skills__chip">Power BI</span>
+                                                <span class="skills__chip">Data Visualization</span>
+                                                <span class="skills__chip">Benchmark Analysis</span>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </section>
+        <!-- ── EDUCATION & CERTS ─────────────────────────────────── -->
+        <section class="section" id="education">
+                <div class="container">
+                        <span class="eyebrow">Background</span>
+                        <h2 class="section-title">Education &amp; Certifications</h2>
+                        <p class="section-subtitle">Academic foundation in HCI and continuous learning through
+                                industry-recognized
+                                programs.</p>
+                        <div style="display:grid;grid-template-columns:1fr 1fr;gap:28px;">
+                                <!-- Education -->
+                                <div
+                                        style="background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:32px;">
+                                        <div style="display:flex;align-items:flex-start;gap:16px;">
+                                                <div
+                                                        style="width:44px;height:44px;background:var(--light-gray);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;">
+                                                        🎓</div>
+                                                <div>
+                                                        <div
+                                                                style="font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--red);margin-bottom:6px;">
+                                                                Current Education</div>
+                                                        <div
+                                                                style="font-family:'Manrope',sans-serif;font-size:17px;font-weight:800;color:var(--black);margin-bottom:4px;">
+                                                                Bachelor of Software Engineering</div>
+                                                        <div
+                                                                style="font-size:14px;font-weight:600;color:var(--text-gray);margin-bottom:8px;">
+                                                                Umm Al-Qura
+                                                                University</div>
+                                                        <div
+                                                                style="font-size:13px;color:var(--text-gray);line-height:1.6;">
+                                                                Specialization: Human-Computer Interaction<br />
+                                                                GPA: 3.09 / 4.00<br />
+                                                                Expected Graduation: April 2027
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                                <!-- Certifications -->
+                                <div
+                                        style="background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:32px;">
+                                        <div
+                                                style="font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--red);margin-bottom:20px;">
+                                                IxDF Certifications</div>
+                                        <div style="display:flex;flex-direction:column;gap:20px;">
+                                                <!-- Cert 1: UX Beginner -->
+                                                <div style="display:flex;gap:16px;align-items:flex-start;">
+                                                        <a href="https://ixdf.org/members/faisal-fawaz/certificate/course/09c8a298-9566-4a22-8dbf-db47752e41f7"
+                                                                rel="noopener" style="flex-shrink:0;" target="_blank">
+                                                                <img alt="UX Beginner's Guide Certificate"
+                                                                        src="Images/cert-ux-beginner.jpg"
+                                                                        style="width:80px;height:57px;object-fit:cover;border-radius:6px;border:1px solid var(--border);display:block;" />
+                                                        </a>
+                                                        <div>
+                                                                <div
+                                                                        style="font-size:14px;font-weight:700;color:var(--black);margin-bottom:3px;">
+                                                                        User Experience: The
+                                                                        Beginner's Guide</div>
+                                                                <div
+                                                                        style="font-size:12px;color:var(--text-gray);margin-bottom:6px;">
+                                                                        Interaction Design Foundation ·
+                                                                        March 4, 2026</div>
+                                                                <a href="https://ixdf.org/members/faisal-fawaz/certificate/course/09c8a298-9566-4a22-8dbf-db47752e41f7"
+                                                                        rel="noopener"
+                                                                        style="font-size:12px;font-weight:600;color:var(--red);text-decoration:underline;text-underline-offset:2px;"
+                                                                        target="_blank">View
+                                                                        Certificate ↗</a>
+                                                        </div>
+                                                </div>
+                                                <!-- Cert 2: Mobile UX — TOP 10% -->
+                                                <div style="display:flex;gap:16px;align-items:flex-start;">
+                                                        <a href="https://ixdf.org/members/faisal-fawaz/certificate/course/921280fb-a10e-4c92-96af-147cf4e92161"
+                                                                rel="noopener" style="flex-shrink:0;" target="_blank">
+                                                                <img alt="Mobile UX Design Certificate"
+                                                                        src="Images/cert-mobile-ux.jpg"
+                                                                        style="width:80px;height:57px;object-fit:cover;border-radius:6px;border:1px solid var(--border);display:block;" />
+                                                        </a>
+                                                        <div>
+                                                                <div
+                                                                        style="display:flex;align-items:center;gap:8px;margin-bottom:3px;flex-wrap:wrap;">
+                                                                        <div
+                                                                                style="font-size:14px;font-weight:700;color:var(--black);">
+                                                                                Mobile UX Design: The Beginner's Guide
+                                                                        </div>
+                                                                        <span
+                                                                                style="font-size:11px;font-weight:700;background:#D62828;color:#fff;padding:2px 8px;border-radius:100px;letter-spacing:0.04em;">Top
+                                                                                10% in class</span>
+                                                                </div>
+                                                                <div
+                                                                        style="font-size:12px;color:var(--text-gray);margin-bottom:6px;">
+                                                                        Interaction Design Foundation ·
+                                                                        May 20, 2026 · Distinction</div>
+                                                                <a href="https://ixdf.org/members/faisal-fawaz/certificate/course/921280fb-a10e-4c92-96af-147cf4e92161"
+                                                                        rel="noopener"
+                                                                        style="font-size:12px;font-weight:600;color:var(--red);text-decoration:underline;text-underline-offset:2px;"
+                                                                        target="_blank">View
+                                                                        Certificate ↗</a>
+                                                        </div>
+                                                </div>
+                                                <!-- Cert 3: Don Norman -->
+                                                <div style="display:flex;gap:16px;align-items:flex-start;">
+                                                        <a href="https://ixdf.org/members/faisal-fawaz/certificate/course/88f45731-2198-4b40-a934-8ad4e3f46fff"
+                                                                rel="noopener" style="flex-shrink:0;" target="_blank">
+                                                                <img alt="Design for a Better World Certificate"
+                                                                        src="Images/cert-don-norman.jpg"
+                                                                        style="width:80px;height:57px;object-fit:cover;border-radius:6px;border:1px solid var(--border);display:block;" />
+                                                        </a>
+                                                        <div>
+                                                                <div
+                                                                        style="font-size:14px;font-weight:700;color:var(--black);margin-bottom:3px;">
+                                                                        Design for a Better
+                                                                        World with Don Norman</div>
+                                                                <div
+                                                                        style="font-size:12px;color:var(--text-gray);margin-bottom:6px;">
+                                                                        Interaction Design Foundation ·
+                                                                        June 2, 2026</div>
+                                                                <a href="https://ixdf.org/members/faisal-fawaz/certificate/course/88f45731-2198-4b40-a934-8ad4e3f46fff"
+                                                                        rel="noopener"
+                                                                        style="font-size:12px;font-weight:600;color:var(--red);text-decoration:underline;text-underline-offset:2px;"
+                                                                        target="_blank">View
+                                                                        Certificate ↗</a>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </section>
+        <!-- ── CONTACT ───────────────────────────────────────────── -->
+        <section class="section section--gray" id="contact">
+                <div class="container">
+                        <div class="contact__inner">
+                                <span class="eyebrow">Get In Touch</span>
+                                <h2 class="section-title">Let's work together.</h2>
+                                <p class="section-subtitle">Open to internship opportunities, junior UX/UI roles, and
+                                        collaborative projects in
+                                        UX, interface design, or data visualization.</p>
+                                <div class="contact__links">
+                                        <a class="contact__link contact__link--primary"
+                                                href="mailto:faisalas12345678@gmail.com">
+                                                <svg fill="none" height="16" viewbox="0 0 16 16" width="16">
+                                                        <path d="M2 4l6 5 6-5M2 4h12v9a1 1 0 01-1 1H3a1 1 0 01-1-1V4z"
+                                                                stroke="currentColor" stroke-linecap="round"
+                                                                stroke-linejoin="round" stroke-width="1.5"></path>
+                                                </svg>
+                                                Send an Email
+                                        </a>
+                                        <a class="contact__link"
+                                                href="https://www.linkedin.com/in/faisal-al-zahrani-a43835281"
+                                                target="_blank" rel="noopener">
+                                                <svg fill="none" height="16" viewbox="0 0 16 16" width="16">
+                                                        <rect height="14" rx="3" stroke="currentColor"
+                                                                stroke-width="1.5" width="14" x="1" y="1"></rect>
+                                                        <path d="M5 7v5M5 5v.5M8 12V9a1 1 0 012 0v3M8 9v3"
+                                                                stroke="currentColor" stroke-linecap="round"
+                                                                stroke-width="1.5"></path>
+                                                </svg>
+                                                LinkedIn
+                                        </a>
+                                        <a class="contact__link" href="tel:+966507577636">
+                                                <svg fill="none" height="16" viewbox="0 0 16 16" width="16">
+                                                        <path d="M3 2h3l1.5 3.5-1.75 1A9 9 0 0010.5 9.25l1-1.75L15 9v3a1 1 0 01-1 1A13 13 0 012 2a1 1 0 011-1z"
+                                                                stroke="currentColor" stroke-linecap="round"
+                                                                stroke-linejoin="round" stroke-width="1.5"></path>
+                                                </svg>
+                                                +966 50 757 7636
+                                        </a>
+                                        <a class="contact__link" href="CV.pdf" download>
+                                                <svg fill="none" height="15" viewbox="0 0 15 15" width="15">
+                                                        <path d="M7.5 2v8M4 7l3.5 3.5L11 7M3 12.5h9"
+                                                                stroke="currentColor" stroke-linecap="round"
+                                                                stroke-linejoin="round" stroke-width="1.5"></path>
+                                                </svg>
+                                                Download CV
+                                        </a>
+                                </div>
+                                <p class="contact__email">Or reach me at: <a
+                                                href="mailto:faisalas12345678@gmail.com">faisalas12345678@gmail.com</a>
+                                </p>
+                        </div>
+                </div>
+        </section>
+        <!-- ── FOOTER ────────────────────────────────────────────── -->
+        <footer class="footer">
+                <div class="container">
+                        <div class="footer__inner">
+                                <span class="footer__name">Faisal Fawaz Al-Zahrani</span>
+                                <span class="footer__copy">UX/UI Designer · HCI Student · Umm Al-Qura University</span>
+                        </div>
+                </div>
+        </footer>
+        <!-- ══ MODALS ════════════════════════════════════════════════ -->
+        <!-- MODAL: ToYou -->
+        <div class="modal-overlay" id="modal-toyou">
+                <div class="modal">
+                        <button aria-label="Close" class="modal__close" onclick="closeModal('toyou')">✕</button>
+                        <div class="modal__cat">UX Case Study · Graduation Project</div>
+                        <h2 class="modal__title">ToYou Food Delivery — UX Redesign</h2>
+                        <div class="modal__meta">
+                                <span class="tag tag--status">In Progress</span>
+                                <span class="tag">Role: UX Researcher / Designer</span>
+                                <span class="tag">Figma</span>
+                                <span class="tag">Surveys · 60 responses</span>
+                                <span class="tag">Usability Testing · 5 sessions</span>
+                        </div>
+                        <h3>Overview</h3>
+                        <p>This Human–Computer Interaction graduation project investigates the user experience of the
+                                ToYou food delivery
+                                app, focusing specifically on exploratory users — people who browse without a specific
+                                order in mind and rely on
+                                the app to help them decide.</p>
+                        <h3>Problem Statement</h3>
+                        <ul>
+                                <li>The current interface is store-centric, serving users who already know what they
+                                        want.</li>
+                                <li>The homepage is visually overloaded, increasing cognitive load from the first
+                                        screen.</li>
+                                <li>Layered decision structures and unclear menus push users to leave the app and search
+                                        externally before
+                                        ordering.</li>
+                                <li>Customization flows lack clarity, creating confusion at a critical point in the
+                                        journey.</li>
+                        </ul>
+                        <h3>Research &amp; Methods</h3>
+                        <ul>
+                                <li>Heuristic evaluation and cognitive walkthrough of the live app</li>
+                                <li>Task-based UX analysis and information architecture review</li>
+                                <li>Survey data from 60 respondents capturing real usage patterns and frustrations</li>
+                                <li>5 usability testing sessions with real participants</li>
+                                <li>UX journey map of the current experience</li>
+                                <li>Benchmark analysis of HungerStation, Jahez, and Mrsool</li>
+                                <li>Personas and storyboard development based on research findings</li>
+                        </ul>
+                        <h3>Key Design Decisions</h3>
+                        <div
+                                style="border-radius:10px;overflow:hidden;margin:16px 0 20px;border:1px solid var(--border);">
+                                <img alt="ToYou low-fidelity wireframes — 6 screens showing homepage, search, item, restaurant, cart, and payment"
+                                        src="Images/toyou-wireframes.png" style="width:100%;display:block;" />
+                                <div
+                                        style="padding:12px 16px;background:var(--light-gray);font-size:12px;color:var(--text-gray);font-weight:500;">
+                                        Low-fidelity wireframes · Homepage → Search → Item → Restaurant → Cart → Payment
+                                </div>
+                        </div>
+                        <ul>
+                                <li>Restructuring the homepage to surface discovery-first content rather than a
+                                        promotional store list</li>
+                                <li>Simplifying the information architecture to reduce decision layers</li>
+                                <li>Introducing a more guided browsing path for users who haven't decided what to order
+                                        yet</li>
+                                <li>Improving menu clarity to lower abandonment at the customization stage</li>
+                        </ul>
+                        <div class="modal__outcome-box">
+                                <p>Current outcomes: Clearer browsing structure, reduced cognitive load in the main
+                                        flow, and a stronger IA
+                                        foundation for the redesigned experience. The project is actively in progress.
+                                </p>
+                        </div>
+                        <h3>Reflection</h3>
+                        <p>This project reinforced that interface problems are rarely surface-level. The visual overload
+                                on ToYou's
+                                homepage was a symptom of a deeper IA problem — one that research made visible and
+                                systematic redesign can
+                                address.</p>
+                </div>
+        </div>
+        <!-- MODAL: Bank Al Bilad -->
+        <div class="modal-overlay" id="modal-bank">
+                <div class="modal">
+                        <button aria-label="Close" class="modal__close" onclick="closeModal('bank')">✕</button>
+                        <div class="modal__cat">Banking UX Redesign</div>
+                        <h2 class="modal__title">Bank Al Bilad — Beneficiary Addition Flow</h2>
+                        <div class="modal__meta">
+                                <span class="tag tag--status"
+                                        style="background:rgba(16,185,129,0.1);color:#065f46;">Completed</span>
+                                <span class="tag">Nov 29 – Dec 18, 2025</span>
+                                <span class="tag">Role: UX Designer</span>
+                                <span class="tag">Figma</span>
+                                <span class="tag">HCI Principles</span>
+                                <span class="tag">Flow Optimization</span>
+                        </div>
+                        <h3>Overview</h3>
+                        <p>This case study focuses on a single, high-friction flow in the Bank Al Bilad mobile app:
+                                adding a new
+                                beneficiary for a bank transfer. The original flow placed unnecessary steps in front of
+                                users during a sensitive
+                                task, creating avoidable friction and reducing confidence.</p>
+                        <h3>Problem Statement</h3>
+                        <ul>
+                                <li>The original flow spanned 7 screens to complete a single transactional task.</li>
+                                <li>Fields like "relationship" and "physical address" added length without adding value
+                                        to the transfer process.
+                                </li>
+                                <li>Unnecessary decision points increased perceived complexity in an already high-stakes
+                                        interaction.</li>
+                                <li>The flow created friction at a moment when users expect speed and reliability.</li>
+                        </ul>
+                        <h3>Design Process</h3>
+                        <ul>
+                                <li>Mapped the original 7-screen flow step by step</li>
+                                <li>Identified fields and screens that did not contribute to completing the task</li>
+                                <li>Applied HCI principles around minimizing steps in task-critical flows</li>
+                                <li>Redesigned the flow to 5 screens by removing non-essential inputs</li>
+                                <li>Validated the revised flow against the original for completeness and efficiency</li>
+                        </ul>
+                        <h3>Before → After</h3>
+                        <div
+                                style="border-radius:10px;overflow:hidden;margin:16px 0 20px;border:1px solid var(--border);">
+                                <img alt="Bank Al Bilad — before (7 screens) and after (5 screens) comparison"
+                                        src="Images/bank-before-after.png" style="width:100%;display:block;" />
+                                <div
+                                        style="padding:12px 16px;background:#111;font-size:12px;color:#aaa;font-weight:500;">
+                                        Before: 7 screens
+                                         →  After: 5 screens  ·  −28% reduction in flow length</div>
+                        </div>
+                        <div class="project-link-row">
+                                <a class="project-link-btn"
+                                        href="https://www.figma.com/proto/cmxGvqdH2v1xQxuoBMunRQ/Microsoft-365-UI-Kit--Community-?node-id=5474-579&t=B1e83s7T8rw6pcqr-1"
+                                        target="_blank" rel="noopener">
+                                        Open Figma Prototype ↗
+                                </a>
+                        </div>
+                        <div class="modal__outcome-box">
+                                <p>Outcome: The redesigned flow reduced screen count from 7 to 5 (−28%), removed
+                                        non-essential fields
+                                        (relationship, physical address), and produced a faster, cleaner
+                                        beneficiary-addition experience grounded in
+                                        HCI principles.</p>
+                        </div>
+                        <h3>Reflection</h3>
+                        <p>This project demonstrated how much clarity can be gained simply by removing what doesn't
+                                belong. In
+                                transactional UX, every extra step is a trust cost. The discipline was in identifying
+                                what was truly necessary
+                                versus what had accumulated by habit.</p>
+                </div>
+        </div>
+        <!-- MODAL: Dashboard -->
+        <div class="modal-overlay" id="modal-dashboard">
+                <div class="modal">
+                        <button aria-label="Close" class="modal__close" onclick="closeModal('dashboard')">✕</button>
+                        <div class="modal__cat">Data Visualization · Power BI</div>
+                        <h2 class="modal__title">Multi-Persona Dashboard System</h2>
+                        <div class="modal__meta">
+                                <span class="tag tag--status"
+                                        style="background:rgba(16,185,129,0.1);color:#065f46;">Completed</span>
+                                <span class="tag">Role: UX / Information Designer</span>
+                                <span class="tag">Power BI</span>
+                                <span class="tag">Information Design</span>
+                                <span class="tag">Data Visualization</span>
+                        </div>
+                        <h3>Overview</h3>
+                        <p>This project addresses a common data visualization failure: building one dashboard and
+                                expecting everyone to
+                                use it. Instead, this system was designed around three distinct user personas — each
+                                with a different
+                                relationship to data, a different decision context, and a different need for depth.</p>
+                        <h3>The Three Personas</h3>
+                        <ul>
+                                <li><strong>CEO (Strategic View):</strong> KPI summary, long-term trend lines, minimal
+                                        interaction. The
+                                        dashboard answers: "Are we on track?"</li>
+                                <li><strong>Operational Manager:</strong> Monthly performance, target comparisons,
+                                        recent trend alerts, and
+                                        areas needing immediate attention. Answers: "What needs action now?"</li>
+                                <li><strong>Senior Data Analyst:</strong> Deeper diagnostic views, segment comparisons,
+                                        filtering controls, and
+                                        analytical reasoning support. Answers: "Why is this happening?"</li>
+                        </ul>
+                        <h3>The Three Dashboards</h3>
+                        <!-- Tab switcher -->
+                        <div style="margin:16px 0 0;">
+                                <div style="display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap;">
+                                        <button id="tab-ceo" onclick="showDash('ceo')"
+                                                style="padding:8px 18px;border-radius:6px;border:1.5px solid #D62828;background:#D62828;color:#fff;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit;">
+                                                CEO Dashboard
+                                        </button>
+                                        <button id="tab-manager" onclick="showDash('manager')"
+                                                style="padding:8px 18px;border-radius:6px;border:1.5px solid #E5E7EB;background:#F3F4F6;color:#0F0F10;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit;">
+                                                Manager Dashboard
+                                        </button>
+                                        <button id="tab-analytical" onclick="showDash('analytical')"
+                                                style="padding:8px 18px;border-radius:6px;border:1.5px solid #E5E7EB;background:#F3F4F6;color:#0F0F10;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit;">
+                                                Analytical Dashboard
+                                        </button>
+                                </div>
+                                <div id="dash-ceo"
+                                        style="border-radius:10px;overflow:hidden;border:1px solid var(--border);">
+                                        <img alt="CEO Dashboard" src="Images/dashboard-ceo.png"
+                                                style="width:100%;display:block;" />
+                                        <div
+                                                style="padding:10px 16px;background:#1a0533;font-size:12px;color:#ccc;font-weight:500;">
+                                                CEO View · KPI
+                                                summary, YoY growth, profit by country, sales trend · Minimal
+                                                interaction</div>
+                                </div>
+                                <div id="dash-manager"
+                                        style="display:none;border-radius:10px;overflow:hidden;border:1px solid var(--border);">
+                                        <img alt="Manager Dashboard" src="Images/dashboard-manager.png"
+                                                style="width:100%;display:block;" />
+                                        <div
+                                                style="padding:10px 16px;background:#1a0533;font-size:12px;color:#ccc;font-weight:500;">
+                                                Manager View ·
+                                                MTD performance, sales vs target, 6-month trend, segment filter</div>
+                                </div>
+                                <div id="dash-analytical"
+                                        style="display:none;border-radius:10px;overflow:hidden;border:1px solid var(--border);">
+                                        <img alt="Analytical Dashboard" src="Images/dashboard-analytical.png"
+                                                style="width:100%;display:block;" />
+                                        <div
+                                                style="padding:10px 16px;background:#1a0533;font-size:12px;color:#ccc;font-weight:500;">
+                                                Analyst View ·
+                                                Profit margin by segment, segment comparison, country &amp;
+                                                discount-band filters</div>
+                                </div>
+                        </div>
+
+                        <div class="project-link-row">
+                                <a class="project-link-btn"
+                                        href="https://app.powerbi.com/view?r=eyJrIjoiZTNkZjc4MzgtY2U3Yy00NzNhLThlMWUtYzIxZjQ1YTFmMWNjIiwidCI6Ijc5YTA1N2ZiLWIwZDUtNDRkZC04ZjkwLTBiZjcxNTFmNWMzZiIsImMiOjl9"
+                                        target="_blank" rel="noopener">
+                                        Open Interactive Power BI Dashboard ↗
+                                </a>
+                        </div>
+
+                        <ul>
+                                <li>Information hierarchy matched to each persona's decision speed and depth requirement
+                                </li>
+                                <li>The CEO view intentionally removes filtering and granular controls — simplicity is
+                                        the feature</li>
+                                <li>The Analyst view surfaces comparison controls and segment breakdowns unavailable in
+                                        the other views</li>
+                                <li>Color and layout consistent across views for brand coherence; depth and density
+                                        varied by persona</li>
+                        </ul>
+                        <div class="modal__outcome-box">
+                                <p>Outcome: Three dashboards, one coherent system. Strategic, operational, and
+                                        analytical needs addressed
+                                        without compromise — each user sees exactly what serves their decisions.</p>
+                        </div>
+                        <h3>Reflection</h3>
+                        <p>The most valuable design decision in this project was choosing what to hide. A dashboard that
+                                shows everything
+                                serves no one well. Designing for a persona means designing a point of view — and
+                                defending it.</p>
+                </div>
+        </div>
+
+        <!-- MODAL: Contact -->
+        <div class="modal-overlay" id="modal-contact">
+                <div class="modal modal--contact">
+                        <button aria-label="Close" class="modal__close" onclick="closeModal('contact')">✕</button>
+                        <div class="modal__cat">Contact</div>
+                        <h2 class="modal__title">Let’s talk.</h2>
+                        <p>Choose the channel that fits best. I usually reply through email first.</p>
+                        <div class="contact-modal__links">
+                                <a class="contact__link contact__link--primary" href="mailto:faisalas12345678@gmail.com">
+                                        Send an Email
+                                </a>
+                                <a class="contact__link" href="https://www.linkedin.com/in/faisal-al-zahrani-a43835281" target="_blank" rel="noopener">
+                                        LinkedIn
+                                </a>
+                                <a class="contact__link" href="tel:+966507577636">
+                                        +966 50 757 7636
+                                </a>
+                                <a class="contact__link" href="CV.pdf" download>
+                                        Download CV
+                                </a>
+                        </div>
+                </div>
+        </div>
+        <!-- ── JS ────────────────────────────────────────────────── -->
+
+        <script src="JS/script.js" defer></script>
+</body>
+
+</html>
